@@ -1,13 +1,13 @@
-package com.github.viduc.wioplugin
+package fr.viduc.sct
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
 import org.jetbrains.annotations.PropertyKey
 
 @NonNls
-private const val BUNDLE = "messages.MyBundle"
+private const val BUNDLE = "messages.SctBundle"
 
-object MyBundle : DynamicBundle(BUNDLE) {
+object SctBundle : DynamicBundle(BUNDLE) {
 
     @JvmStatic
     fun message(@PropertyKey(resourceBundle = BUNDLE) key: String, vararg params: Any) =
